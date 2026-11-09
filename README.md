@@ -1,3 +1,5 @@
+> **本仓库已并入 [legged-navigation-runtime](https://github.com/zxinyu-robot/legged-navigation-runtime)（目录 `python/slam_doctor/`），此处只读归档，后续维护在新仓库进行。**
+
 # SlamDoctor
 
 [![CI](https://github.com/zxinyu-robot/SlamDoctor/actions/workflows/ci.yml/badge.svg)](https://github.com/zxinyu-robot/SlamDoctor/actions/workflows/ci.yml)
