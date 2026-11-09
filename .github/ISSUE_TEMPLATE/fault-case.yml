@@ -1,0 +1,38 @@
+name: Reproducible fault case
+description: Propose an offline robot autonomy failure case with observable evidence.
+title: "[Fault case] "
+labels:
+  - fault-case
+body:
+  - type: markdown
+    attributes:
+      value: |
+        A case must be reproducible and must not contain production logs,
+        credentials, personal data, or other sensitive information.
+  - type: textarea
+    id: symptom
+    attributes:
+      label: Observable symptom
+      description: Describe what was observed without asserting a unique root cause.
+    validations:
+      required: true
+  - type: textarea
+    id: input
+    attributes:
+      label: Reproduction input
+      description: Link sanitized data or provide a deterministic generator command.
+      render: text
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected diagnostic result
+      description: Include supporting evidence, missing evidence, and the next probe.
+    validations:
+      required: true
+  - type: textarea
+    id: limitations
+    attributes:
+      label: Known limitations
+      description: Note false positives, false negatives, or unavailable telemetry.

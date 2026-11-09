@@ -1,0 +1,45 @@
+name: External trial feedback
+description: Report what happened when you tried SlamDoctor without author guidance.
+title: "[Trial] "
+labels:
+  - feedback
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for trying SlamDoctor. Please do not upload production logs,
+        credentials, personal data, or other sensitive information.
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: Operating system, Python version, and install method.
+    validations:
+      required: true
+  - type: textarea
+    id: commands
+    attributes:
+      label: Commands run
+      description: Include the commands that reproduced the experience.
+      render: shell
+    validations:
+      required: true
+  - type: textarea
+    id: experience
+    attributes:
+      label: What happened?
+      description: What worked, what was confusing, and where did you get stuck?
+    validations:
+      required: true
+  - type: textarea
+    id: usefulness
+    attributes:
+      label: Usefulness
+      description: Was the output actionable? What data source would you want to try next?
+    validations:
+      required: true
+  - type: textarea
+    id: sanitized_data
+    attributes:
+      label: Sanitized data or description
+      description: Share a sanitized example or describe the shape of your data.

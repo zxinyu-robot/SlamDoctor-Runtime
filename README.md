@@ -12,6 +12,28 @@ SlamDoctor 将传感器、定位、地图、规划、控制和系统资源观测
 
 它适合日志回放、现场问题初筛、自动化验收和回归测试，不替代标定、SLAM、控制器或厂商驱动工具。
 
+## Public Collaboration
+
+SlamDoctor is an independent, ROS-agnostic collaboration project for
+observable, diagnosable, and recoverable robot autonomy systems.
+
+The current collaboration goal is to help an external developer run the tool
+on an unfamiliar robot log without requiring the full robot stack. We are
+looking for feedback and contributions in:
+
+- ROS 2, rosbag2, and MCAP adapters that map platform data to the standard
+  observation format.
+- Reproducible fault cases with offline input data and expected findings.
+- Diagnostic rules backed by observable evidence and automated tests.
+- Clearer reports, documentation, and examples.
+
+Discussion first. Implementation second. Validation throughout. A diagnostic
+ranking is not a calibrated causal probability, and a single anomaly must not
+be presented as proof of a unique root cause.
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for the contribution contract and
+[the trial guide](docs/external-trial.md) for the 10-minute first run.
+
 ## 核心能力
 
 - 通用契约：时间倒退、乱序、丢帧、频率、P95 延迟、冻结、离线和 frame 变化。
