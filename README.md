@@ -35,7 +35,7 @@ SlamDoctor 将传感器、定位、地图、规划、控制和系统资源观测
 
 ```bash
 python -m pip install .
-python -m pip install "ส.[dev]"
+python -m pip install ".[dev]"
 ```
 
 安装后提供 `slam-doctor` 主命令；旧命令 `esis` 继续兼容。
